@@ -18,10 +18,7 @@ struct Address: Display{
     var countryName: String
 
     
-    mutating func setCity(newCity: String){  //https://medium.com/@agrawalsuneet/mutating-in-swift-7327d8a1cddd
-        self.city = newCity
-    }
-    
+  
     func display() {
         
     

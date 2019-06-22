@@ -18,5 +18,23 @@ import Foundation
 //    intVal = Int(i)!
 //    print(intVal)
 //}
+// Creating Borrower data...
+
+var borrow_1 = Borrower(borrow_id: 1, borrow_date: Date(), fine: 2.30)
+var borrow_2 = Borrower(borrow_id: 2, borrow_date: Date(), fine: 8.40)
+var borrow_3 = Borrower(borrow_id: 3, borrow_date: Date(), fine: 1.80)
+var borrow_4 = Borrower(borrow_id: 4, borrow_date: Date(), fine: 7.70)
+
+// creating Address Data...
+
+//var address_1 = 
+
+
+
+// creating Student Objects
+
+//var student_1: Student = Student(u_id: 1, f_name: "Ankita", l_name: "Pabbi", email: "ankita3@gmail.com", addr: "2 Edenmills dr", ph_num: 6478388908, borr: , stu_en_num: <#T##Int#>, class_name: <#T##String#>)
+
+//var teacher_1 = Teachers(u_id: 1, f_name: "Pritesh", l_name: "Patel", email: "priteshpatel@gmail.com", addr: "7 Mcowan Road", ph_num: 64756745678, sub_take: Subjects.Computer_Science, join_date: Date(), stu_arr: <#T##[Student]#>, borr: <#T##Borrower#>)
 
 

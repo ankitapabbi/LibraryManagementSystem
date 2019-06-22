@@ -13,5 +13,10 @@ struct Borrower {
     var borrow_date: Date
     var fine: Double
   
+    mutating func addBorrower(borr_id: Int,borr_date: Date,fine: Double)  {
+        self.borrow_id = borr_id
+        self.borrow_date = borr_date
+        self.fine = fine
+    }
    
 }
