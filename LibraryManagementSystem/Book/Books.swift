@@ -19,11 +19,10 @@ class Books: Display{
     var book_id: Int
     var book_type: Book_type
     
-    init() {
+    init(b_id: Int, b_type: Book_type) {
     
-        self.book_id = Int()
-        
-        self.book_type = Book_type.None
+        self.book_id = b_id
+        self.book_type = b_type
         
     }
     func display() -> String {
