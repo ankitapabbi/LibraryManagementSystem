@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Users: Display{
+class Users: Display, UserPrivilege{
     
     
   
@@ -34,7 +34,17 @@ class Users: Display{
         var data = "data"
         return data
     }
-  
+    func issueBook() {
+        
+    }
+    
+    func returnBook() {
+    
+    }
+    
+    func calculateFine() {
+    
+    }
     
 }
 

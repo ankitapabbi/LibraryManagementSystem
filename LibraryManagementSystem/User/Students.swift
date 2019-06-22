@@ -29,7 +29,15 @@ class Student: Users {
         return data
     }
     
-    
+    override func issueBook() {
+        
+    }
+    override func returnBook() {
+        
+    }
+    override func calculateFine() {
+        
+    }
     
     
     
