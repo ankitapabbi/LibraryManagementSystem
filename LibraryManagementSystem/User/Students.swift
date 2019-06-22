@@ -30,11 +30,11 @@ class Student: Users, UserPrivilege {
     }
     
     func issueBook() {
-        <#code#>
+        
     }
     
     func returnBook() {
-        <#code#>
+        
     }
     
     
