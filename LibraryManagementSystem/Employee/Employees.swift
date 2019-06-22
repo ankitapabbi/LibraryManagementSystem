@@ -27,10 +27,9 @@ class Employees: Display {
         
     }
     
-    func display() -> String{
+    func display() {
     
-        var data = "data"
-        return data
+   
     }
     
 }

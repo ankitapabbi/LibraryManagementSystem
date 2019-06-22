@@ -25,9 +25,11 @@ class Books: Display{
         self.book_type = b_type
         
     }
-    func display() -> String {
-       var a = "abc"
-        return a
+    func display() {
+       
+        print("Book Id : \(self.book_id)")
+        print("Book Type : \(self.book_type)")
+        
     }
     
 }

@@ -11,11 +11,11 @@ import Foundation
 class Student: Users {
    
     
-    var borrower: Dictionary<Int,String>
+    var borrower: Borrower
     var student_enrollement_Number: Int
     var class_name: String
     
-    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Dictionary<Int,String>,stu_en_num: Int,class_name: String) {
+    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) {
         
         self.borrower = borr
         self.student_enrollement_Number = stu_en_num
@@ -24,9 +24,8 @@ class Student: Users {
        
     
     }
-    override func display() -> String{
-        let data = "data"
-        return data
+    override func display() {
+      
     }
     
     override func issueBook() {

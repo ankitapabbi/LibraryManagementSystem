@@ -22,10 +22,9 @@ struct Address: Display{
         self.city = newCity
     }
     
-    func display() -> String {
+    func display() {
         
-        let d = "abc"
-        return d
+    
     }
     
 }

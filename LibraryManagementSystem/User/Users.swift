@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Users: Display, UserPrivilege{
+class Users: Display, UserInformation {
     
     
   
@@ -30,9 +30,8 @@ class Users: Display, UserPrivilege{
         
     }
 
-    func display() -> String{
-        var data = "data"
-        return data
+    func display() {
+     
     }
     func issueBook() {
         

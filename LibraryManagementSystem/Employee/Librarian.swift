@@ -24,9 +24,8 @@ class Librarian: Employees {
         super.init(emp_id: emp_id, emp_f_name: emp_f_name, emp_l_name: emp_l_name, emp_email: emp_email, emp_contact: emp_contact, join_date: join_date)
     }
     
-    override func display() -> String {
-        var data = "data"
-        return data
+    override func display() {
+      
     }
     
     

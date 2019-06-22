@@ -18,17 +18,17 @@ class Teachers: Users {
     var subject_taken: Subjects
     var joining_date: Date
     var student_array : [Student]
+    var borrower: Borrower
     
-    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int, sub_take: Subjects, join_date: Date, stu_arr: [Student]) {
+    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int, sub_take: Subjects, join_date: Date, stu_arr: [Student], borr: Borrower) {
         self.subject_taken = sub_take
         self.joining_date = join_date
         self.student_array = stu_arr
+        self.borrower = borr
         super.init(u_id: u_id, f_name: f_name, l_name: l_name, email: email, addr: addr, ph_num: ph_num)
     }
-    override func display() -> String{
-        var data = "data"
-        return data
-        
+    override func display() {
+     
     }
     override func issueBook() {
         

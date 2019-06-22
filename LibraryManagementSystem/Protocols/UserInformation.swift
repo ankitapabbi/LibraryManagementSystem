@@ -7,7 +7,7 @@
 //
 
 import Foundation
-protocol UserPrivilege {
+protocol UserInformation {
     func issueBook()
     func returnBook()
     func calculateFine() 
