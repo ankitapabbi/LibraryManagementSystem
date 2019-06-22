@@ -9,6 +9,8 @@
 import Foundation
 
 class Users: Display{
+    
+    
   
     var user_id: Int
     var first_name: String
@@ -32,6 +34,7 @@ class Users: Display{
         var data = "data"
         return data
     }
+  
     
 }
 

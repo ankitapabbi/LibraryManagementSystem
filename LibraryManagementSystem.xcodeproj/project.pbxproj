@@ -15,6 +15,7 @@
 		7E3884DC22B21B68009D2B46 /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3884DB22B21B68009D2B46 /* Students.swift */; };
 		7E3884DE22B21B87009D2B46 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3884DD22B21B87009D2B46 /* Books.swift */; };
 		7EF520EB22BEDA3B00541E25 /* UserPrivilege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF520EA22BEDA3B00541E25 /* UserPrivilege.swift */; };
+		7EF520ED22BEDF3A00541E25 /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF520EC22BEDF3A00541E25 /* Borrower.swift */; };
 		7EF922A922B5E05400DB4971 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF922A822B5E05400DB4971 /* Address.swift */; };
 		7EFA67AF22B6F8F400B808AF /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA67AE22B6F8F400B808AF /* Display.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		7E3884DB22B21B68009D2B46 /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
 		7E3884DD22B21B87009D2B46 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		7EF520EA22BEDA3B00541E25 /* UserPrivilege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrivilege.swift; sourceTree = "<group>"; };
+		7EF520EC22BEDF3A00541E25 /* Borrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
 		7EF922A822B5E05400DB4971 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		7EFA67AE22B6F8F400B808AF /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				7EF922A822B5E05400DB4971 /* Address.swift */,
+				7EF520EC22BEDF3A00541E25 /* Borrower.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				7E3884DC22B21B68009D2B46 /* Students.swift in Sources */,
 				7E3884C922B21996009D2B46 /* main.swift in Sources */,
 				7EF922A922B5E05400DB4971 /* Address.swift in Sources */,
+				7EF520ED22BEDF3A00541E25 /* Borrower.swift in Sources */,
 				7EF520EB22BEDA3B00541E25 /* UserPrivilege.swift in Sources */,
 				7E3884D022B21A17009D2B46 /* Employees.swift in Sources */,
 			);

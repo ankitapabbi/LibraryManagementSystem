@@ -12,7 +12,7 @@ enum Subjects {
     case None, Math, Science, English, French, Biology, Physics, Computer_Science, Chemistry
 }
 
-class Teachers: Users, UserPrivilege {
+class Teachers: Users {
    
     
     var subject_taken: Subjects
@@ -30,11 +30,5 @@ class Teachers: Users, UserPrivilege {
         return data
         
     }
-    func issueBook() {
-        
-    }
-    
-    func returnBook() {
-        
-    }
+   
 }

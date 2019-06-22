@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Student: Users, UserPrivilege {
+class Student: Users {
    
     
     var borrower: Dictionary<Int,String>
@@ -29,13 +29,7 @@ class Student: Users, UserPrivilege {
         return data
     }
     
-    func issueBook() {
-        
-    }
     
-    func returnBook() {
-        
-    }
     
     
     

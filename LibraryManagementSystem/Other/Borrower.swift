@@ -1,5 +1,5 @@
 //
-//  UserPrivilege.swift
+//  Borrower.swift
 //  LibraryManagementSystem
 //
 //  Created by Ankita Pabbi on 2019-06-22.
@@ -7,8 +7,11 @@
 //
 
 import Foundation
-protocol UserPrivilege {
-    func issueBook()
-    func returnBook()
-    func calculateFine() 
+struct Borrower {
+    
+    var borrow_id: Int
+    var borrow_date: Date
+    var fine: Double
+  
+   
 }
