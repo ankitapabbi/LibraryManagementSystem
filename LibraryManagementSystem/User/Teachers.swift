@@ -28,7 +28,24 @@ class Teachers: Users {
         super.init(u_id: u_id, f_name: f_name, l_name: l_name, email: email, addr: addr, ph_num: ph_num)
     }
     override func display() {
-     
+     print("--------------------- Teacher's Details ---------------------\n")
+        print("Teacher Subject Taken : \(self.subject_taken)")
+        print("Joining Date: \(self.joining_date)")
+        print("---------------- Students Under \(self.first_name) --------------\n")
+        for student in student_array {
+            print("Student Id : \(student.user_id)")
+            print("Student First Name : \(student.first_name)")
+            print("Student Last Name : \(student.last_name)")
+            print("Student Enrolment Number : \(student.student_enrollement_Number)")
+            print("Student Email : \(student.email)")
+            print("Student Class Name : \(student.class_name)\n")
+            
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+            
+        }
+        print("------------------------------------------------\n")
+        print("Borrower Details : \(self.borrower)")
+        
     }
     override func issueBook() {
         

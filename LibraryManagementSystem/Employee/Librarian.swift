@@ -43,7 +43,7 @@ class Librarian: Employees {
             print("Teacher Last Name : \(teacher.last_name)")
             print("Teacher Email : \(teacher.email)")
             print("Teacher Phone Number : \(teacher.phone_number)")
-            print("Teacher Address : \(teacher.address)\n")
+            
             print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
         }
         print("-----------------------------------------------\n")
@@ -56,7 +56,7 @@ class Librarian: Employees {
             print("Student Enrolment Number : \(student.student_enrollement_Number)")
             print("Student Email : \(student.email)")
             print("Student Class Name : \(student.class_name)")
-            print("Student Address : \(student.address)\n")
+           
             print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
             
         }

@@ -28,7 +28,12 @@ struct Address: Display{
     }
     
     func display() {
-        
+        print("Address ------------------------------\n")
+        print("Suit Number : \(self.suitNumber!)")
+        print("Street Number : \(self.streetName)")
+        print("City Name : \(self.city)")
+        print("Postal Code : \(self.postalCode)")
+        print("Country Name : \(self.countryName)")
     
     }
     

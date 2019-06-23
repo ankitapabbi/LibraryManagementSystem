@@ -16,7 +16,7 @@ class Student: Users {
     var class_name: String
     
     // creating student dictionary here
-     private static var studentList=[Int:Student]()
+      static var studentList=[Int:Student]()
     
     init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) {
         
@@ -31,7 +31,8 @@ class Student: Users {
         super.display()
         print("Student Enrollement Number : \(self.student_enrollement_Number)")
         print("CLass Name : \(self.class_name)")
-        print("Books Borrowed : \(self.borrower)")
+        print("Books Borrowed : \(self.borrower)\n")
+        print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
       
       
     }
@@ -46,6 +47,15 @@ class Student: Users {
             return stu as Student
         }
         else {
+            return nil
+        }
+        
+    }
+    static func allStudent(stu_id: Int) -> Student? {
+        if let student = studentList[stu_id] {
+            print("Student id is : \(student.user_id)")
+            return student as Student
+        }else{
             return nil
         }
         

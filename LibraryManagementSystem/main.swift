@@ -98,6 +98,11 @@ var book_12: Books = Books(b_id: 12, b_type: Book_type.Medical)
 var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name: "Sharma", emp_email: "rohit@gmail.com", emp_contact: 8976542345, join_date: Date(), room_num: 61, book_arr: [book_1,book_2,book_3,book_4,book_5,book_6], stu_arr: [student_1,student_2,student_3,student_4,student_5,student_6,student_7,student_8,student_9,student_10],
     teach_arr: [teacher_1,teacher_2,teacher_3,teacher_4,teacher_5])
 
+
+
+
+
+
 librarian_1.display()
 
 print("------------------Fetch Student by Enrollment Number --------------------- \n")
@@ -108,3 +113,17 @@ if let students = Student.getStudentByEnNumber(stu_id: 727145)
 }else{
     print("This STUDENT do not EXISIT")
 }
+print("---------------------- [ Students Details ] -------------------------\n")
+student_1.display()
+student_2.display()
+student_3.display()
+student_4.display()
+student_5.display()
+student_6.display()
+student_7.display()
+student_8.display()
+student_9.display()
+student_10.display()
+
+//print("----------------------- [ Teachers Details ] -------------------------\n")
+teacher_1.display()
