@@ -26,7 +26,7 @@ var borrow_3 = Borrower(borrow_id: 3, borrow_date: Date(), fine: 1.80)
 var borrow_4 = Borrower(borrow_id: 4, borrow_date: Date(), fine: 7.70)
 
 // creating Address Data...
-
+`
 var address_1 = Address(suitNumber: 2, streetName: "Keeler blvd", city: "Scarborough", postalCode: "M2R5O1", countryName: "Canada")
 var address_2 = Address(suitNumber: 19, streetName: "Peace dr", city: "Scarborough", postalCode: "M1G2V3", countryName: "Canada")
 var address_3 = Address(suitNumber: 6, streetName: "Goldcrest dr", city: "Brampton", postalCode: "M2R2Y6", countryName: "Canada")
