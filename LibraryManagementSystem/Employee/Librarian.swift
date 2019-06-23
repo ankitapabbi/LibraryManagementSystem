@@ -27,11 +27,40 @@ class Librarian: Employees {
    
     override func display() {
         super.display()
-        print("Room Number : \(self.room_number)")
-        for i in book_array {
-            print(i)
+        print("Room Number : \(self.room_number!)\n")
+        print("---------- Available Books -------------\n")
+        for book in book_array {
+            print("Book Id : \(book.book_id)")
+            print("Book Type : \(book.book_type)\n")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
         }
+        print("----------------------------------------\n")
         
+        print("------------- Teacher's Detail ------------\n")
+        for teacher in teacher_array{
+            print("Teacher Id : \(teacher.user_id)")
+            print("Teacher First Name : \(teacher.first_name)")
+            print("Teacher Last Name : \(teacher.last_name)")
+            print("Teacher Email : \(teacher.email)")
+            print("Teacher Phone Number : \(teacher.phone_number)")
+            print("Teacher Address : \(teacher.address)\n")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+        }
+        print("-----------------------------------------------\n")
+        
+        print("---------------- Student's Detail --------------\n")
+        for student in student_array {
+            print("Student Id : \(student.user_id)")
+            print("Student First Name : \(student.first_name)")
+            print("Student Last Name : \(student.last_name)")
+            print("Student Enrolment Number : \(student.student_enrollement_Number)")
+            print("Student Email : \(student.email)")
+            print("Student Class Name : \(student.class_name)")
+            print("Student Address : \(student.address)\n")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+            
+        }
+        print("------------------------------------------------\n")
       
     }
     

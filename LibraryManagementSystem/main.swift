@@ -74,4 +74,9 @@ var book_11: Books = Books(b_id: 11, b_type: Book_type.Journals)
 var book_12: Books = Books(b_id: 12, b_type: Book_type.Medical)
 
 
+// creating Librarian Object
 
+var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name: "Sharma", emp_email: "rohit@gmail.com", emp_contact: 8976542345, join_date: Date(), room_num: 61, book_arr: [book_1,book_2,book_3,book_4,book_5,book_6], stu_arr: [student_1,student_2,student_3,student_4,student_5,student_6,student_7,student_8,student_9,student_10],
+    teach_arr: [teacher_1,teacher_2,teacher_3,teacher_4,teacher_5])
+
+librarian_1.display()
