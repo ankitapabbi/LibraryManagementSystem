@@ -57,3 +57,5 @@ var teacher_3 = Teachers(u_id: 3, f_name: "Garima", l_name: "Verma", email: "Gar
 var teacher_4 = Teachers(u_id: 4, f_name: "Rupinder", l_name: "Kaur", email: "rupender@gmail.com", addr:address_6, ph_num: 6475983782, sub_take: Subjects.French, join_date: Date(), stu_arr: [student_10,student_1,student_4,student_5], borr: borrow_3)
 var teacher_5 = Teachers(u_id: 5, f_name: "Jyoti", l_name: "Kashyap", email: "jKashyap@gmail.com", addr:address_2, ph_num: 6201874567, sub_take: Subjects.Chemistry, join_date: Date(), stu_arr: [student_6,student_3,student_1,student_4,student_5,student_10], borr: borrow_4)
 
+
+
