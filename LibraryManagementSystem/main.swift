@@ -26,7 +26,7 @@ var borrow_3 = Borrower(borrow_id: 3, borrow_date: Date(), fine: 1.80)
 var borrow_4 = Borrower(borrow_id: 4, borrow_date: Date(), fine: 7.70)
 
 // creating Address Data...
-`
+
 var address_1 = Address(suitNumber: 2, streetName: "Keeler blvd", city: "Scarborough", postalCode: "M2R5O1", countryName: "Canada")
 var address_2 = Address(suitNumber: 19, streetName: "Peace dr", city: "Scarborough", postalCode: "M1G2V3", countryName: "Canada")
 var address_3 = Address(suitNumber: 6, streetName: "Goldcrest dr", city: "Brampton", postalCode: "M2R2Y6", countryName: "Canada")
@@ -50,7 +50,10 @@ var student_10: Student = Student(u_id: 10, f_name: "Parth", l_name: "Patel", em
 
 
 
-
-//var teacher_1 = Teachers(u_id: 1, f_name: "Pritesh", l_name: "Patel", email: "priteshpatel@gmail.com", addr: "7 Mcowan Road", ph_num: 64756745678, sub_take: Subjects.Computer_Science, join_date: Date(), stu_arr: <#T##[Student]#>, borr: <#T##Borrower#>)
-
+// Creating Teachers Objects...
+var teacher_1 = Teachers(u_id: 1, f_name: "Pritesh", l_name: "Patel", email: "priteshpatel@gmail.com", addr: address_3, ph_num: 6475674567, sub_take: Subjects.Computer_Science, join_date: Date(), stu_arr: [student_1,student_4,student_5], borr: borrow_1)
+var teacher_2 = Teachers(u_id: 2, f_name: "Vick", l_name: "Jack", email: "Vjack@gmail.com", addr:address_5, ph_num: 4756798768, sub_take: Subjects.English, join_date: Date(), stu_arr: [student_2,student_3,student_9], borr: borrow_3)
+var teacher_3 = Teachers(u_id: 3, f_name: "Garima", l_name: "Verma", email: "Garimaverma@gmail.com", addr: address_4, ph_num: 6402834567, sub_take: Subjects.Physics, join_date: Date(), stu_arr: [student_2,student_9,student_7,student_1], borr: borrow_2)
+var teacher_4 = Teachers(u_id: 4, f_name: "Rupinder", l_name: "Kaur", email: "rupender@gmail.com", addr:address_6, ph_num: 6475983782, sub_take: Subjects.French, join_date: Date(), stu_arr: [student_10,student_1,student_4,student_5], borr: borrow_3)
+var teacher_5 = Teachers(u_id: 5, f_name: "Jyoti", l_name: "Kashyap", email: "jKashyap@gmail.com", addr:address_2, ph_num: 6201874567, sub_take: Subjects.Chemistry, join_date: Date(), stu_arr: [student_6,student_3,student_1,student_4,student_5,student_10], borr: borrow_4)
 
