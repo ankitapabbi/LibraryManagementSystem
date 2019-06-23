@@ -31,6 +31,14 @@ class Users: Display, UserInformation {
     }
 
     func display() {
+        print("--------------------- User's Detail ---------------------\n")
+        print("User Id : \(self.user_id)")
+        print("User First Name : \(self.first_name)")
+        print("User Last Name : \(self.last_name)")
+        print("User Email : \(self.email)")
+        print("User Address : \(self.address)")
+        print("User Phone Number : \(self.phone_number)")
+        
      
     }
     func issueBook() {

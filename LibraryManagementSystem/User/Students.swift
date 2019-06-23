@@ -15,6 +15,8 @@ class Student: Users {
     var student_enrollement_Number: Int
     var class_name: String
     
+  
+    
     init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) {
         
         self.borrower = borr
@@ -25,6 +27,11 @@ class Student: Users {
     
     }
     override func display() {
+        super.display()
+        print("Student Enrollement Number : \(self.student_enrollement_Number)")
+        print("CLass Name : \(self.class_name)")
+        print("Books Borrowed : \(self.borrower)")
+      
       
     }
     
