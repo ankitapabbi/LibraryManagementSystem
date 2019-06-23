@@ -15,7 +15,8 @@ class Student: Users {
     var student_enrollement_Number: Int
     var class_name: String
     
-  
+    // creating student dictionary here
+     private static var studentList=[Int:Student]()
     
     init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) {
         
@@ -34,6 +35,22 @@ class Student: Users {
       
       
     }
+    
+    static func studentDetail(student: Student) {
+        studentList.updateValue(student, forKey: student.student_enrollement_Number)
+        
+    }
+    // fetching the Student by its enrollment Number
+    static func getStudentByEnNumber(stu_id:Int) -> Student? {
+        if let stu = studentList[stu_id] {
+            return stu as Student
+        }
+        else {
+            return nil
+        }
+        
+    }
+    
     
     override func issueBook() {
         
