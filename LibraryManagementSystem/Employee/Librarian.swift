@@ -24,8 +24,13 @@ class Librarian: Employees {
         super.init(emp_id: emp_id, emp_f_name: emp_f_name, emp_l_name: emp_l_name, emp_email: emp_email, emp_contact: emp_contact, join_date: join_date)
     }
     
+   
     override func display() {
-       
+        super.display()
+        print("Room Number : \(self.room_number)")
+        for i in book_array {
+            print(i)
+        }
         
       
     }

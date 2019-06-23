@@ -35,6 +35,8 @@ var address_5 = Address(suitNumber: 12, streetName: "Eglinton ave", city: "Oshaw
 var address_6 = Address(suitNumber: 8, streetName: "Mercer st", city: "Etobiko", postalCode: "M2L6I9", countryName: "Canada")
 
 
+
+
 // creating Student Objects
 
 var student_1: Student = Student(u_id: 1, f_name: "Ankita", l_name: "Pabbi", email: "ankita3@gmail.com", addr: address_1, ph_num: 6478388908, borr: borrow_1, stu_en_num: 751145, class_name: "MADT")
@@ -56,6 +58,20 @@ var teacher_2 = Teachers(u_id: 2, f_name: "Vick", l_name: "Jack", email: "Vjack@
 var teacher_3 = Teachers(u_id: 3, f_name: "Garima", l_name: "Verma", email: "Garimaverma@gmail.com", addr: address_4, ph_num: 6402834567, sub_take: Subjects.Physics, join_date: Date(), stu_arr: [student_2,student_9,student_7,student_1], borr: borrow_2)
 var teacher_4 = Teachers(u_id: 4, f_name: "Rupinder", l_name: "Kaur", email: "rupender@gmail.com", addr:address_6, ph_num: 6475983782, sub_take: Subjects.French, join_date: Date(), stu_arr: [student_10,student_1,student_4,student_5], borr: borrow_3)
 var teacher_5 = Teachers(u_id: 5, f_name: "Jyoti", l_name: "Kashyap", email: "jKashyap@gmail.com", addr:address_2, ph_num: 6201874567, sub_take: Subjects.Chemistry, join_date: Date(), stu_arr: [student_6,student_3,student_1,student_4,student_5,student_10], borr: borrow_4)
+
+// Creating Books Objects
+var book_1: Books = Books(b_id: 1, b_type: Book_type.Arts)
+var book_2: Books = Books(b_id: 2, b_type: Book_type.Commerce)
+var book_3: Books = Books(b_id: 3, b_type: Book_type.Non_Medical)
+var book_4: Books = Books(b_id: 4, b_type: Book_type.Journals)
+var book_5: Books = Books(b_id: 5, b_type: Book_type.Magazine)
+var book_6: Books = Books(b_id: 6, b_type: Book_type.Medical)
+var book_7: Books = Books(b_id: 7, b_type: Book_type.Non_Medical)
+var book_8: Books = Books(b_id: 8, b_type: Book_type.Arts)
+var book_9: Books = Books(b_id: 9, b_type: Book_type.Article)
+var book_10: Books = Books(b_id: 10, b_type: Book_type.Commerce)
+var book_11: Books = Books(b_id: 11, b_type: Book_type.Journals)
+var book_12: Books = Books(b_id: 12, b_type: Book_type.Medical)
 
 
 
