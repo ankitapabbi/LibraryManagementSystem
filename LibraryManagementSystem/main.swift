@@ -27,8 +27,12 @@ var borrow_4 = Borrower(borrow_id: 4, borrow_date: Date(), fine: 7.70)
 
 // creating Address Data...
 
-//var address_1 = 
-
+var address_1 = Address(suitNumber: 45, streetName: "Keeler", city: "Scarborough", postalCode: "M2R5O1", countryName: "Canada")
+var address_2 = Address(suitNumber: 19, streetName: "Peace dr", city: "Scarborough", postalCode: "M1G2V3", countryName: "Canada")
+var address_3 = Address(suitNumber: 6, streetName: "Goldcrest dr", city: "Brampton", postalCode: "M2R2Y6", countryName: "Canada")
+var address_4 = Address(suitNumber: 99, streetName: "Brimorton dr", city: "Kitchener", postalCode: "M2R6L7", countryName: "Canada")
+var address_5 = Address(suitNumber: 12, streetName: "Eglinton ave", city: "Oshawa", postalCode: "A6V5R2", countryName: "Canada")
+var address_6 = Address(suitNumber: 8, streetName: "Mercer st", city: "Etobiko", postalCode: "M2L6I9", countryName: "Canada")
 
 
 // creating Student Objects

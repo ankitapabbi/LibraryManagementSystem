@@ -18,7 +18,15 @@ struct Address: Display{
     var countryName: String
 
     
-  
+    mutating func setAddress(suit_num: Int,st_name: String,city: String,p_code: String,country_name: String){  //https://medium.com/@agrawalsuneet/mutating-in-swift-7327d8a1cddd
+        self.suitNumber = suit_num
+        self.streetName = st_name
+        self.city = city
+        self.postalCode = p_code
+        self.countryName = country_name
+        
+    }
+    
     func display() {
         
     
