@@ -103,27 +103,31 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 
 
 
-librarian_1.display()
+//librarian_1.display()
 
-print("------------------Fetch Student by Enrollment Number --------------------- \n")
-if let students = Student.getStudentByEnNumber(stu_id: 727145)
-    
-{
-    print(students.display())
-}else{
-    print("This STUDENT do not EXISIT")
-}
-print("---------------------- [ Students Details ] -------------------------\n")
-student_1.display()
-student_2.display()
-student_3.display()
-student_4.display()
-student_5.display()
-student_6.display()
-student_7.display()
-student_8.display()
-student_9.display()
-student_10.display()
+//print("------------------Fetch Student by Enrollment Number --------------------- \n")
+//if let students = Student.getStudentByEnNumber(stu_id: 727145)
+//    
+//{
+//    print(students.display())
+//}else{
+//    print("This STUDENT do not EXISIT")
+//}
+//print("---------------------- [ Students Details ] -------------------------\n")
+//student_1.display()
+//student_2.display()
+//student_3.display()
+//student_4.display()
+//student_5.display()
+//student_6.display()
+//student_7.display()
+//student_8.display()
+//student_9.display()
+//student_10.display()
 
-//print("----------------------- [ Teachers Details ] -------------------------\n")
+print("----------------------- [ Teachers Details ] -------------------------\n")
 teacher_1.display()
+teacher_2.display()
+teacher_3.display()
+teacher_4.display()
+teacher_5.display()

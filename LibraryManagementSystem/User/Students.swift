@@ -31,7 +31,7 @@ class Student: Users {
         super.display()
         print("Student Enrollement Number : \(self.student_enrollement_Number)")
         print("CLass Name : \(self.class_name)")
-        print("Books Borrowed : \(self.borrower)\n")
+        borrower.display()
         print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
       
       
