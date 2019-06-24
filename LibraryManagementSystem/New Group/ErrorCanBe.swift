@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 enum ErrorCanBe:Error
 {
     case invalidEmail, invalidMobile

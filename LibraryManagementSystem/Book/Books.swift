@@ -23,8 +23,7 @@ class Books: Display{
     
         self.book_id = b_id
         self.book_type = b_type
-        
-        
+    
         
         
     }

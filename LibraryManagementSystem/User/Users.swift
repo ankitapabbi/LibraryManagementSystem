@@ -34,21 +34,27 @@ class Users: Display, UserInformation {
     var address: Address
     var phone_number: Int
     
-   
-    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int)   {
-      
     
-        self.user_id = u_id
-        self.first_name = f_name
-        self.last_name = l_name
-//        if !self.isValidEmail(testStr: email)
+   
+    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int) throws {
+        
+//        guard !isValidEmail(testStr: email) else
 //        {
 //            throw ErrorCanBe.invalidEmail
 //        }
-//
-        self.email = email
-        self.address = addr
-        self.phone_number = ph_num
+        if  ph_num < 10 {
+            throw ErrorCanBe.invalidMobile
+        }
+        
+        
+    
+            self.user_id = u_id
+            self.first_name = f_name
+            self.last_name = l_name
+            self.email = email
+            self.address = addr
+            self.phone_number = ph_num
+       
         
     }
 
@@ -66,6 +72,13 @@ class Users: Display, UserInformation {
         
      
     }
+    // For Email Validation.
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
    
     func issuedBooks(id: Int) {
     
@@ -79,13 +92,7 @@ class Users: Display, UserInformation {
     func calculateFine() {
     
     }
-    // For Email Validation.
-     func isValidEmail(testStr:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: testStr)
-    }
+  
     
 }
 

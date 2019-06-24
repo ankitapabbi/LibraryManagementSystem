@@ -21,13 +21,14 @@ class Student: Users {
     // creating Books dictionary here
     static var issueList=[Int:Books]()
     
-    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) {
+    init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int,borr: Borrower,stu_en_num: Int,class_name: String) throws {
         
         self.borrower = borr
         self.student_enrollement_Number = stu_en_num
         self.class_name = class_name
-        super.init(u_id: u_id, f_name: f_name, l_name: l_name, email: email, addr: addr, ph_num: ph_num)
-       
+        
+        try super.init(u_id: u_id, f_name: f_name, l_name: l_name, email: email, addr: addr, ph_num: ph_num)
+        
     
     }
     override func display() {
@@ -75,6 +76,7 @@ class Student: Users {
         
     }
     static func showIssueBook(id: Int) -> Books? {
+        print("Issued Book is :")
         if let book = issueList[id] {
             print("Book id is : \(book.book_id)")
             print("Book Type is : \(book.book_type)")
@@ -86,6 +88,7 @@ class Student: Users {
     
    
     static func returnBook(bookId : Int) -> Books? {
+        print("Returned Book :")
         if let  book = issueList[bookId] {
                 print("Book id : \(book.book_id)")
                 print("Book type : \(book.book_type)")
