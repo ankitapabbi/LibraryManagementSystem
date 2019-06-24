@@ -49,7 +49,7 @@ class Users: Display, UserInformation {
     }
     
     
-    func returnBook() {
+    func returnBook(bookId : Int) {
     
     }
     

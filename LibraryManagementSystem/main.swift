@@ -260,7 +260,38 @@ if userInput == 1 {
              
             }
         case "d":
-            print("d")
+            var b1:Int
+            print("List Of Available Books")
+            librarian_1.displayBooks()
+            print("Enter Book Id To Return :")
+            if let nu = readLine(){
+                b1 = Int(i)!
+                b1 = Int(nu) ?? 0
+               
+                switch(b1){
+                case 1:
+                    Student.issuedBooks(b_id: book_1)
+                    Student.returnBook(bookId: b1)
+                case 2:
+                    Student.issuedBooks(b_id: book_2)
+                    Student.returnBook(bookId: b1)
+                case 3:
+                    Student.issuedBooks(b_id: book_3)
+                    Student.returnBook(bookId: b1)
+                case 4:
+                    Student.issuedBooks(b_id: book_4)
+                     Student.returnBook(bookId: b1)
+                case 5:
+                    Student.issuedBooks(b_id: book_5)
+                    Student.returnBook(bookId: b1)
+                case 6:
+                    Student.issuedBooks(b_id: book_6)
+                     Student.returnBook(bookId: b1)
+                default:
+                    print("Wrong Input")
+                }
+                
+            }
         default:
             print("Wrong Input")
         }
@@ -330,10 +361,42 @@ if userInput == 1 {
                 
             }
         case "d":
-            print("d")
+            var b2:Int
+            print("List Of Available Books")
+            librarian_1.displayBooks()
+            print("Enter Book Id To Return :")
+            if let nu = readLine(){
+                b2 = Int(i)!
+                b2 = Int(nu) ?? 0
+                
+                switch(b2){
+                case 1:
+                    Student.issuedBooks(b_id: book_1)
+                    Student.returnBook(bookId: b2)
+                case 2:
+                    Student.issuedBooks(b_id: book_2)
+                    Student.returnBook(bookId: b2)
+                case 3:
+                    Student.issuedBooks(b_id: book_3)
+                    Student.returnBook(bookId: b2)
+                case 4:
+                    Student.issuedBooks(b_id: book_4)
+                    Student.returnBook(bookId: b2)
+                case 5:
+                    Student.issuedBooks(b_id: book_5)
+                    Student.returnBook(bookId: b2)
+                case 6:
+                    Student.issuedBooks(b_id: book_6)
+                    Student.returnBook(bookId: b2)
+                default:
+                    print("Wrong Input")
+                }
+            }
+                
         default:
             print("Wrong Input")
         }
+        
     }
 }
     }

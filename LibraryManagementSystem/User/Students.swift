@@ -85,9 +85,19 @@ class Student: Users {
     }
     
    
-    override func returnBook() {
-        
+    static func returnBook(bookId : Int) -> Books? {
+        if let  book = issueList[bookId] {
+                print("Book id : \(book.book_id)")
+                print("Book type : \(book.book_type)")
+            
+            return book as Books
+        }else{
+            return nil
+        }
+       
     }
+    
+    
     override func calculateFine() {
         
     }
