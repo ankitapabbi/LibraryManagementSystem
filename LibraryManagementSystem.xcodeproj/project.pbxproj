@@ -81,7 +81,7 @@
 		7E3884C722B21996009D2B46 /* LibraryManagementSystem */ = {
 			isa = PBXGroup;
 			children = (
-				7EF520F422C1554F00541E25 /* New Group */,
+				7EF520F422C1554F00541E25 /* Errors */,
 				7EF520EE22C0DC5200541E25 /* Extentions */,
 				7E3884C822B21996009D2B46 /* main.swift */,
 				7EFA67AD22B6F8CC00B808AF /* Protocols */,
@@ -101,12 +101,12 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
-		7EF520F422C1554F00541E25 /* New Group */ = {
+		7EF520F422C1554F00541E25 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				7EF520F522C1556500541E25 /* ErrorCanBe.swift */,
 			);
-			path = "New Group";
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		7EF922A422B5C0ED00DB4971 /* Employee */ = {
