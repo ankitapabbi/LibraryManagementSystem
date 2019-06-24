@@ -57,7 +57,16 @@ class Teachers: Users {
         
     }
     
-  
+    // fetching the Teacher by its user id
+    static func getTeacherById(teach_id:Int) -> Teachers? {
+        if let teach = teacherList[teach_id] {
+            return teach  as Teachers
+        }
+        else {
+            return nil
+        }
+        
+    }
     override func issueBook() {
         
     }

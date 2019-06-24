@@ -72,19 +72,19 @@ Student.studentDetail(student: student_10)
 
 
 // Creating Teachers Objects...
-var teacher_1 = Teachers(u_id: 1, f_name: "Pritesh", l_name: "Patel", email: "priteshpatel@gmail.com", addr: address_3, ph_num: 6475674567, sub_take: Subjects.Computer_Science, join_date: Date(), stu_arr: [student_1,student_4,student_5], borr: borrow_1)
+var teacher_1 = Teachers(u_id: 11, f_name: "Pritesh", l_name: "Patel", email: "priteshpatel@gmail.com", addr: address_3, ph_num: 6475674567, sub_take: Subjects.Computer_Science, join_date: Date(), stu_arr: [student_1,student_4,student_5], borr: borrow_1)
 Teachers.teacherDetail(teacher: teacher_1)
 
-var teacher_2 = Teachers(u_id: 2, f_name: "Vick", l_name: "Jack", email: "Vjack@gmail.com", addr:address_5, ph_num: 4756798768, sub_take: Subjects.English, join_date: Date(), stu_arr: [student_2,student_3,student_9], borr: borrow_3)
+var teacher_2 = Teachers(u_id: 12, f_name: "Vick", l_name: "Jack", email: "Vjack@gmail.com", addr:address_5, ph_num: 4756798768, sub_take: Subjects.English, join_date: Date(), stu_arr: [student_2,student_3,student_9], borr: borrow_3)
 Teachers.teacherDetail(teacher: teacher_2)
 
-var teacher_3 = Teachers(u_id: 3, f_name: "Garima", l_name: "Verma", email: "Garimaverma@gmail.com", addr: address_4, ph_num: 6402834567, sub_take: Subjects.Physics, join_date: Date(), stu_arr: [student_2,student_9,student_7,student_1], borr: borrow_2)
+var teacher_3 = Teachers(u_id: 13, f_name: "Garima", l_name: "Verma", email: "Garimaverma@gmail.com", addr: address_4, ph_num: 6402834567, sub_take: Subjects.Physics, join_date: Date(), stu_arr: [student_2,student_9,student_7,student_1], borr: borrow_2)
 Teachers.teacherDetail(teacher: teacher_3)
 
-var teacher_4 = Teachers(u_id: 4, f_name: "Rupinder", l_name: "Kaur", email: "rupender@gmail.com", addr:address_6, ph_num: 6475983782, sub_take: Subjects.French, join_date: Date(), stu_arr: [student_10,student_1,student_4,student_5], borr: borrow_3)
+var teacher_4 = Teachers(u_id: 14, f_name: "Rupinder", l_name: "Kaur", email: "rupender@gmail.com", addr:address_6, ph_num: 6475983782, sub_take: Subjects.French, join_date: Date(), stu_arr: [student_10,student_1,student_4,student_5], borr: borrow_3)
 Teachers.teacherDetail(teacher: teacher_4)
 
-var teacher_5 = Teachers(u_id: 5, f_name: "Jyoti", l_name: "Kashyap", email: "jKashyap@gmail.com", addr:address_2, ph_num: 6201874567, sub_take: Subjects.Chemistry, join_date: Date(), stu_arr: [student_6,student_3,student_1,student_4,student_5,student_10], borr: borrow_4)
+var teacher_5 = Teachers(u_id: 15, f_name: "Jyoti", l_name: "Kashyap", email: "jKashyap@gmail.com", addr:address_2, ph_num: 6201874567, sub_take: Subjects.Chemistry, join_date: Date(), stu_arr: [student_6,student_3,student_1,student_4,student_5,student_10], borr: borrow_4)
 Teachers.teacherDetail(teacher: teacher_5)
 
 // Creating Books Objects
@@ -114,7 +114,7 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 
 //librarian_1.display()
 
-//print("------------------Fetch Student by Enrollment Number --------------------- \n")
+//print("-------------------- Fetch Student by Enrollment Number --------------------- \n")
 //if let students = Student.getStudentByEnNumber(stu_id: 727145)
 //    
 //{
@@ -141,4 +141,11 @@ teacher_3.display()
 teacher_4.display()
 teacher_5.display()
 
+print("------------------------ Fetch Teacher by User Id -------------------------- \n")
+if let teacher = Teachers.getTeacherById(teach_id: 11)
 
+{
+    print(teacher.display())
+}else{
+    print("This TEACHER do not EXISIT")
+}
