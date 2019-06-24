@@ -20,6 +20,9 @@ class Teachers: Users {
     var student_array : [Student]
     var borrower: Borrower
     
+    // creating Teachers dictionary here
+    static var teacherList=[Int:Teachers]()
+    
     init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int, sub_take: Subjects, join_date: Date, stu_arr: [Student], borr: Borrower) {
         self.subject_taken = sub_take
         self.joining_date = join_date
@@ -49,6 +52,12 @@ class Teachers: Users {
         
         
     }
+    static func teacherDetail(teacher: Teachers) {
+        teacherList.updateValue(teacher, forKey: teacher.user_id)
+        
+    }
+    
+  
     override func issueBook() {
         
     }
