@@ -122,24 +122,9 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 //}else{
 //    print("This STUDENT do not EXISIT")
 //}
-//print("---------------------- [ Students Details ] -------------------------\n")
-//student_1.display()
-//student_2.display()
-//student_3.display()
-//student_4.display()
-//student_5.display()
-//student_6.display()
-//student_7.display()
-//student_8.display()
-//student_9.display()
-//student_10.display()
 
-//print("----------------------- [ Teachers Details ] -------------------------\n")
-//teacher_1.display()
-//teacher_2.display()
-//teacher_3.display()
-//teacher_4.display()
-//teacher_5.display()
+
+
 //
 //print("------------------------ Fetch Teacher by User Id -------------------------- \n")
 //if let teacher = Teachers.getTeacherById(teach_id: 11)
@@ -225,16 +210,29 @@ if userInput == 1 {
         print("Welcome To Student's Section \n")
         print("Select Among the Following...")
         print("A For Student's List")
-        print("B To Issue Book")
-        print("C To Return Book")
+        print("B To Find Student By Its Id")
+        print("C To Issue Book")
+        print("D To Return Book")
         var option1 = readLine()
         switch(option1){
         case "a":
-            print("a")
+            print("---------------------- [ Students Details ] -------------------------\n")
+            student_1.display()
+            student_2.display()
+            student_3.display()
+            student_4.display()
+            student_5.display()
+            student_6.display()
+            student_7.display()
+            student_8.display()
+            student_9.display()
+            student_10.display()
         case "b":
             print("b")
         case "c":
             print("c")
+        case "d":
+            print("d")
         default:
             print("Wrong Input")
         }
@@ -242,16 +240,24 @@ if userInput == 1 {
         print("Welcome To Teacher's Section \n")
         print("Select Among the Following...")
         print("A For Teacher's List")
-        print("B To Issue Book")
-        print("C To Return Book")
+        print("B To Find Teacher By Its Id")
+        print("C To Issue Book")
+        print("D To Return Book")
         var option2 = readLine()
         switch(option2){
         case "a":
-            print("a")
+            print("----------------------- [ Teachers Details ] -------------------------\n")
+            teacher_1.display()
+            teacher_2.display()
+            teacher_3.display()
+            teacher_4.display()
+            teacher_5.display()
         case "b":
             print("b")
         case "c":
             print("c")
+        case "d":
+            print("d")
         default:
             print("Wrong Input")
         }
