@@ -112,7 +112,7 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 
 
 
-//librarian_1.display()
+
 
 //print("-------------------- Fetch Student by Enrollment Number --------------------- \n")
 //if let students = Student.getStudentByEnNumber(stu_id: 727145)
@@ -134,18 +134,83 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 //student_9.display()
 //student_10.display()
 
-print("----------------------- [ Teachers Details ] -------------------------\n")
-teacher_1.display()
-teacher_2.display()
-teacher_3.display()
-teacher_4.display()
-teacher_5.display()
+//print("----------------------- [ Teachers Details ] -------------------------\n")
+//teacher_1.display()
+//teacher_2.display()
+//teacher_3.display()
+//teacher_4.display()
+//teacher_5.display()
+//
+//print("------------------------ Fetch Teacher by User Id -------------------------- \n")
+//if let teacher = Teachers.getTeacherById(teach_id: 11)
+//
+//{
+//    print(teacher.display())
+//}else{
+//    print("This TEACHER do not EXISIT")
+//}
 
-print("------------------------ Fetch Teacher by User Id -------------------------- \n")
-if let teacher = Teachers.getTeacherById(teach_id: 11)
+print("--------------------- { Welcome To Library Management System } ---------------------\n")
+print("-----------[ Login as Librarian or User ]----------\n")
+print("Enter \n1 For Librarian \n2 for User")
 
-{
-    print(teacher.display())
-}else{
-    print("This TEACHER do not EXISIT")
+var userInput :Int
+
+if let i = readLine(){
+userInput = Int(i)!
+
+if userInput == 1 {
+     var lab = librarian_1.employee_first_name
+     print("Hello \(lab) !\n")
+    print("Select Among the Following...")
+    print("A For The Whole Structure of Library.")
+    print("B For Adding a Book to Library")
+    print("C For Removing a Book from Library")
+    var option = readLine()
+    
+    switch(option){
+    case "a":
+        print("------LIBRARY STRUCTURE----\n")
+        librarian_1.display()
+        
+    case "b":
+        print("Pending Books To be Added...!\n")
+        print("b1 For Book1")
+        print("b2 For Book2")
+        print("b3 For Book3")
+        print("b4 For Book4")
+        print("b5 For Book5")
+        var book = readLine()
+        if book == "b1"{
+          librarian_1.addBook(book: book_1)
+        }else if book == "b2"{
+            librarian_1.addBook(book: book_2)
+        }else if book == "b3"{
+            librarian_1.addBook(book: book_3)
+        }else if book == "b4"{
+            librarian_1.addBook(book: book_4)
+        }else if book == "b5"{
+            librarian_1.addBook(book: book_5)
+        }else{
+            print("Existing Books Are : ")
+            
+        }
+    case "c":
+        print("C")
+    default:
+        print("Wrong Input")
+    }
+    
+    
+    
+}else if userInput == 2{
+    print("Hello User !")
 }
+}
+//var intVal:Int
+//
+//if let i = readLine(){ //keyboard
+//    intVal = Int(i)!
+//    print(intVal)
+
+

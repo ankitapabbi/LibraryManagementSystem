@@ -24,6 +24,9 @@ class Books: Display{
         self.book_id = b_id
         self.book_type = b_type
         
+        
+        
+        
     }
     func display() {
        
@@ -31,5 +34,7 @@ class Books: Display{
         print("Book Type : \(self.book_type)")
         
     }
+    
+    
     
 }

@@ -14,6 +14,9 @@ class Librarian: Employees {
     var student_array: [Student]
     var teacher_array: [Teachers]
     
+    // creating Book dictionary here
+    var bookList=[Int:Books]()
+    
     
     
     init(emp_id: Int, emp_f_name: String, emp_l_name: String, emp_email: String, emp_contact: Int, join_date: Date,room_num: Int, book_arr: [Books],stu_arr: [Student],teach_arr: [Teachers]) {
@@ -65,9 +68,10 @@ class Librarian: Employees {
     }
     
     
-    func addBook() {
-        
+    func addBook(book: Books) {
+        bookList.updateValue(book, forKey: book.book_id)
     }
+  
     func removeBook() {
         
     }
