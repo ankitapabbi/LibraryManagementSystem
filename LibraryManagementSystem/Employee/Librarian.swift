@@ -83,19 +83,24 @@ class Librarian: Employees {
         }
         
     }
-//    func displayBooks() {
-//        for book in bookList {
-//            print("Book Id : \(book.key)")
-//            print("Book Type : \(book.value)\n")
-//            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
-//        }
-//    }
-    func removeBook() {
-        
+    func displayBooks() {
+        for book in book_array {
+            print("Book Id : \(book.book_id)")
+            print("Book Type : \(book.book_type)\n")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+        }
     }
-    func updateBook() {
-        
-    }
+    func removeBook(bookId : Int) {
+       var arrayNewBook:[Books] = [Books]()
+            for book in self.book_array {
+                if book.book_id != bookId {
+                    arrayNewBook.append(book)
+                }
+            }
+            self.book_array = arrayNewBook
+        }
+    
+   
 
     
 }

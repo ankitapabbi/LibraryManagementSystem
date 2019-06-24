@@ -202,7 +202,16 @@ if userInput == 1 {
             librarian_1.getBookById(b_id: 5)
         }
     case "c":
-        print("C")
+        print("Existing Books:\n")
+        librarian_1.displayBooks()
+        print("Enter Book Id To Remove: \n")
+        var bookid:Int
+        if let ii = readLine() {
+            bookid = Int(ii)!
+            librarian_1.removeBook(bookId: bookid)
+        }
+        librarian_1.displayBooks()
+        
     default:
         print("Wrong Input")
     }
@@ -210,7 +219,43 @@ if userInput == 1 {
     
     
 }else if userInput == 2{
-    print("Hello User !")
+    print("Press s for STUDENT and t for TEACHER")
+    var user = readLine()
+    if user == "s"{
+        print("Welcome To Student's Section \n")
+        print("Select Among the Following...")
+        print("A For Student's List")
+        print("B To Issue Book")
+        print("C To Return Book")
+        var option1 = readLine()
+        switch(option1){
+        case "a":
+            print("a")
+        case "b":
+            print("b")
+        case "c":
+            print("c")
+        default:
+            print("Wrong Input")
+        }
+    }else if user == "t"{
+        print("Welcome To Teacher's Section \n")
+        print("Select Among the Following...")
+        print("A For Teacher's List")
+        print("B To Issue Book")
+        print("C To Return Book")
+        var option2 = readLine()
+        switch(option2){
+        case "a":
+            print("a")
+        case "b":
+            print("b")
+        case "c":
+            print("c")
+        default:
+            print("Wrong Input")
+        }
+    }
 }
     }
 } while userInput != 3 ; do {
