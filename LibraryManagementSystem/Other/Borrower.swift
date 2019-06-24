@@ -22,7 +22,7 @@ struct Borrower: Display {
         
         print("Borrower Detail ------------------------\n")
         print("Borrower ID : \(self.borrow_id)")
-        print("Borrower Date : \(self.borrow_date)")
+        print("Borrower Date : \(self.borrow_date.getForamttedDate())")
         print("Borrower Fine : \(self.fine)")
         
     }

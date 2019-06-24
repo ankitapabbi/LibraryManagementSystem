@@ -37,13 +37,14 @@ class Teachers: Users {
     // print("--------------------- Teacher's Details ---------------------\n")
         super.display()
         print("Teacher Subject Taken : \(self.subject_taken)")
-        print("Joining Date: \(self.joining_date)")
+        print("Joining Date: \(self.joining_date.getForamttedDate())")
         borrower.display()
         print("------------------------------ Students Under \(self.first_name) -------------------------\n")
         for student in student_array {
             print("               Student Id : \(student.user_id)")
             print("               Student First Name : \(student.first_name)")
             print("               Student Last Name : \(student.last_name)")
+            
             print("               Student Enrolment Number : \(student.student_enrollement_Number)")
             print("               Student Email : \(student.email)")
             print("               Student Class Name : \(student.class_name)\n")

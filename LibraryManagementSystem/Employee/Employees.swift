@@ -13,6 +13,10 @@ class Employees: Display {
     var employee_id: Int
     var employee_first_name: String
     var employee_last_name: String
+    // computed Proterty
+    var fullName : String{
+        return "\(self.employee_first_name ) \(self.employee_last_name)"
+    }
     var employee_email: String
     var employee_contact: Int
     var joining_date: Date
@@ -32,9 +36,10 @@ class Employees: Display {
         print("Employee Id : \(self.employee_id)")
         print("Employee First Name : \(self.employee_first_name)")
         print("Employee Last Name : \(self.employee_last_name)")
+        print("Employee Full Name : \(self.fullName)")
         print("Employee Email : \(self.employee_email)")
         print("Employee Contact : \(self.employee_contact)")
-        print("Employee Joining Date : \(self.joining_date)")
+        print("Employee Joining Date : \(self.joining_date.getForamttedDate())")
    
     }
     

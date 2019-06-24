@@ -87,7 +87,14 @@ class Librarian: Employees {
         for book in book_array {
             print("Book Id : \(book.book_id)")
             print("Book Type : \(book.book_type)\n")
-            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+            
+            }
+    }
+    func displayBooks2() {
+        for book in bookList {
+            print("Book Id : \(book.key)")
+            print("Book Type : \(book.value)\n")
+            
         }
     }
     func removeBook(bookId : Int) {

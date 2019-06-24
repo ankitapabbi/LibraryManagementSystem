@@ -66,7 +66,7 @@ Student.studentDetail(student: student_8)
 var student_9: Student = Student(u_id: 9, f_name: "rinchu", l_name: "R", email: "Rinchu@gmail.com", addr: address_1, ph_num: 6478283845, borr: borrow_1, stu_en_num: 751865, class_name: "Networking")
 Student.studentDetail(student: student_9)
 
-var student_10: Student = Student(u_id: 10, f_name: "Parth", l_name: "Patel", email: "Parth12@gmail.com", addr: address_1, ph_num: 3526382345, borr: borrow_2, stu_en_num: 752945, class_name: "MADT")
+var student_10: Student = Student(u_id: 10, f_name: "Parth", l_name: "Patel", email: "Parth2gmail.com", addr: address_1, ph_num: 3526382345, borr: borrow_2, stu_en_num: 752945, class_name: "MADT")
 Student.studentDetail(student: student_10)
 
 
@@ -107,7 +107,11 @@ var book_12: Books = Books(b_id: 12, b_type: Book_type.Medical)
 var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name: "Sharma", emp_email: "rohit@gmail.com", emp_contact: 8976542345, join_date: Date(), room_num: 61, book_arr: [book_1,book_2,book_3,book_4,book_5,book_6], stu_arr: [student_1,student_2,student_3,student_4,student_5,student_6,student_7,student_8,student_9,student_10],
     teach_arr: [teacher_1,teacher_2,teacher_3,teacher_4,teacher_5])
 
-
+librarian_1.addBook(book: book_1)
+librarian_1.addBook(book: book_2)
+librarian_1.addBook(book: book_3)
+librarian_1.addBook(book: book_4)
+librarian_1.addBook(book: book_5)
 
 
 
@@ -130,8 +134,7 @@ repeat {
 print("Enter \n1 For Librarian \n2 for User \n3 For Exit")
 if let i = readLine(){
 userInput = Int(i)!
-
-   
+    
 if userInput == 1 {
      var lab = librarian_1.employee_first_name
      print("Hello \(lab) !\n")
@@ -139,6 +142,7 @@ if userInput == 1 {
     print("A For The Whole Structure of Library.")
     print("B For Adding a Book to Library")
     print("C For Removing a Book from Library")
+    
     var option = readLine()
     
     switch(option){
@@ -147,29 +151,37 @@ if userInput == 1 {
         librarian_1.display()
         
     case "b":
+        librarian_1.displayBooks2()
         print("Pending Books To be Added...!\n")
-        print("b1 For Book1")
-        print("b2 For Book2")
-        print("b3 For Book3")
-        print("b4 For Book4")
-        print("b5 For Book5")
+        print("b1 For Book7)")
+        librarian_1.bookList.index(forKey: 7)
+        print("b2 For Book8")
+        librarian_1.getBookById(b_id: 8)
+        print("b3 For Book9")
+        librarian_1.getBookById(b_id: 9)
+        print("b4 For Book10")
+        librarian_1.getBookById(b_id: 10)
+        print("b5 For Book11")
+        librarian_1.getBookById(b_id: 11)
         var book = readLine()
         if book == "b1"{
-          librarian_1.addBook(book: book_1)
-            librarian_1.getBookById(b_id: 1)
+          librarian_1.addBook(book: book_7)
+            librarian_1.getBookById(b_id: 7)
         }else if book == "b2"{
-            librarian_1.addBook(book: book_2)
-             librarian_1.getBookById(b_id: 2)
+            librarian_1.addBook(book: book_8)
+             librarian_1.getBookById(b_id: 8)
         }else if book == "b3"{
-            librarian_1.addBook(book: book_3)
-            librarian_1.getBookById(b_id: 3)
+            librarian_1.addBook(book: book_9)
+            librarian_1.getBookById(b_id: 9)
         }else if book == "b4"{
-            librarian_1.addBook(book: book_4)
-            librarian_1.getBookById(b_id: 4)
+            librarian_1.addBook(book: book_10)
+            librarian_1.getBookById(b_id: 10)
         }else if book == "b5"{
-            librarian_1.addBook(book: book_5)
-            librarian_1.getBookById(b_id: 5)
+            librarian_1.addBook(book: book_11)
+            librarian_1.getBookById(b_id: 11)
         }
+        librarian_1.displayBooks2()
+        
     case "c":
         print("Existing Books:\n")
         librarian_1.displayBooks()
@@ -188,7 +200,7 @@ if userInput == 1 {
     
     
 }else if userInput == 2{
-    print("Press s for STUDENT and t for TEACHER")
+    print("Press 's' for STUDENT and 't' for TEACHER \n")
     var user = readLine()
     if user == "s"{
         print("Welcome To Student's Section \n")
@@ -221,6 +233,7 @@ if userInput == 1 {
                 if let students = Student.getStudentByEnNumber(stu_id: en)
 
                 {
+                    
                     print(students.display())
                 }else{
                     print("This STUDENT do not EXISIT")

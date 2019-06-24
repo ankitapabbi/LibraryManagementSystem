@@ -14,11 +14,7 @@ extension String{
         return emailTest.evaluate(with: self)
     }
 }
-extension String{
-    func countryCode() -> String{
-        return "+1\(self)"
-    }
-}
+
 
 extension String{
     func postalCheck() -> Bool{
@@ -36,5 +32,15 @@ extension String{
             return false
         }
         return true
+    }
+}
+extension Date
+{
+    public func getForamttedDate() -> String
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "EEEE, dd MMMM, yyyy"
+        let formattedDate = dateFormatterPrint.string(from: self)
+        return formattedDate
     }
 }

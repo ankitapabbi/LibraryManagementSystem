@@ -28,7 +28,7 @@ struct Address: Display{
     }
     
     func display() {
-        print("Address ------------------------------\n")
+        print("****Address***\n")
         print("Suit Number : \(self.suitNumber!)")
         print("Street Number : \(self.streetName)")
         print("City Name : \(self.city)")
