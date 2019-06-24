@@ -212,13 +212,14 @@ if userInput == 1 {
             student_9.display()
             student_10.display()
         case "b":
-            var num: Int
+            var en: Int
+            print("Enter Student Enrollment Number :")
             if let nu = readLine(){
-                num = Int(i)!
-                print("Enter Student Enrollment Number :")
+                en = Int(i)!
+                en = Int(nu) ?? 0
                 print("-------------------- Fetch Student by Enrollment Number --------------------- \n")
-                if let students = Student.getStudentByEnNumber(stu_id: num)
-                
+                if let students = Student.getStudentByEnNumber(stu_id: en)
+
                 {
                     print(students.display())
                 }else{
@@ -227,7 +228,37 @@ if userInput == 1 {
                 
             }
         case "c":
-            print("c")
+            var num1:Int
+            print("List Of Available Books")
+            librarian_1.displayBooks()
+             print("Enter Book Id To Issue :")
+            if let nu = readLine(){
+                num1 = Int(i)!
+                 num1 = Int(nu) ?? 0
+                switch(num1){
+                case 1:
+                    Student.issuedBooks(b_id: book_1)
+                       Student.showIssueBook(id: num1)
+                case 2:
+                    Student.issuedBooks(b_id: book_2)
+                       Student.showIssueBook(id: num1)
+                case 3:
+                     Student.issuedBooks(b_id: book_3)
+                       Student.showIssueBook(id: num1)
+                case 4:
+                     Student.issuedBooks(b_id: book_4)
+                       Student.showIssueBook(id: num1)
+                case 5:
+                     Student.issuedBooks(b_id: book_5)
+                       Student.showIssueBook(id: num1)
+                case 6:
+                    Student.issuedBooks(b_id: book_6)
+                      Student.showIssueBook(id: num1)
+                default:
+                    print("Wrong Input")
+                }
+             
+            }
         case "d":
             print("d")
         default:
@@ -250,22 +281,54 @@ if userInput == 1 {
             teacher_4.display()
             teacher_5.display()
         case "b":
-            var num: Int
+            var id: Int
+             print("Enter Teacher Id :")
             if let nu = readLine(){
-                num = Int(i)!
-                print("Enter Teacher Id :")
+                id = Int(i)!
+                id = Int(nu) ?? 0
+               print(id)
                 print("------------------------ Fetch Teacher by User Id -------------------------- \n")
-                if let teacher = Teachers.getTeacherById(teach_id: 11)
-                
+                if let teacher = Teachers.getTeacherById(teach_id: id)
+
                 {
                     print(teacher.display())
                 }else{
                     print("This TEACHER do not EXISIT")
                 }
-                
+
             }
         case "c":
-            print("c")
+            var num2:Int
+            print("List Of Available Books")
+            librarian_1.displayBooks()
+            print("Enter Book Id To Issue :")
+            if let nu = readLine(){
+                num2 = Int(i)!
+                num2 = Int(nu) ?? 0
+                switch(num2){
+                case 1:
+                    Teachers.issuedBooks(b_id: book_1)
+                    Teachers.showIssueBook(id: num2)
+                case 2:
+                    Teachers.issuedBooks(b_id: book_2)
+                    Teachers.showIssueBook(id: num2)
+                case 3:
+                    Teachers.issuedBooks(b_id: book_3)
+                    Teachers.showIssueBook(id: num2)
+                case 4:
+                    Teachers.issuedBooks(b_id: book_4)
+                    Teachers.showIssueBook(id: num2)
+                case 5:
+                    Teachers.issuedBooks(b_id: book_5)
+                    Teachers.showIssueBook(id: num2)
+                case 6:
+                    Teachers.issuedBooks(b_id: book_6)
+                    Teachers.showIssueBook(id: num2)
+                default:
+                    print("Wrong Input")
+                }
+                
+            }
         case "d":
             print("d")
         default:

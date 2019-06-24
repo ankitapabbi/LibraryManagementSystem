@@ -9,6 +9,7 @@
 import Foundation
 
 class Users: Display, UserInformation {
+   
     
     
   
@@ -43,9 +44,10 @@ class Users: Display, UserInformation {
         
      
     }
-    func issueBook() {
-        
+    func issuedBooks(id: Int) {
+    
     }
+    
     
     func returnBook() {
     

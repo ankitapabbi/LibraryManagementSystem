@@ -23,6 +23,9 @@ class Teachers: Users {
     // creating Teachers dictionary here
     static var teacherList=[Int:Teachers]()
     
+    // creating Books dictionary here
+    static var issueList=[Int:Books]()
+    
     init(u_id: Int, f_name: String, l_name: String, email: String, addr: Address, ph_num: Int, sub_take: Subjects, join_date: Date, stu_arr: [Student], borr: Borrower) {
         self.subject_taken = sub_take
         self.joining_date = join_date
@@ -67,8 +70,18 @@ class Teachers: Users {
         }
         
     }
-    override func issueBook() {
+    static func issuedBooks(b_id: Books)  {
+        issueList.updateValue(b_id, forKey: b_id.book_id)
         
+    }
+    static func showIssueBook(id: Int) -> Books? {
+        if let book = issueList[id] {
+            print("Book id is : \(book.book_id)")
+            print("Book Type is : \(book.book_type)")
+            return book as Books
+        }else{
+            return nil
+        }
     }
     override func returnBook() {
         

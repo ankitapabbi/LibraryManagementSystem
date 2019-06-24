@@ -8,7 +8,7 @@
 
 import Foundation
 protocol UserInformation {
-    func issueBook()
+    func issuedBooks(id: Int)
     func returnBook()
     func calculateFine() 
 }
