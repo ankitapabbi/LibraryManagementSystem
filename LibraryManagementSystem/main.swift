@@ -152,13 +152,17 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 
 print("--------------------- { Welcome To Library Management System } ---------------------\n")
 print("-----------[ Login as Librarian or User ]----------\n")
-print("Enter \n1 For Librarian \n2 for User")
+
 
 var userInput :Int
 
+userInput = 0
+repeat {
+print("Enter \n1 For Librarian \n2 for User \n3 For Exit")
 if let i = readLine(){
 userInput = Int(i)!
 
+   
 if userInput == 1 {
      var lab = librarian_1.employee_first_name
      print("Hello \(lab) !\n")
@@ -183,17 +187,19 @@ if userInput == 1 {
         var book = readLine()
         if book == "b1"{
           librarian_1.addBook(book: book_1)
+            librarian_1.getBookById(b_id: 1)
         }else if book == "b2"{
             librarian_1.addBook(book: book_2)
+             librarian_1.getBookById(b_id: 2)
         }else if book == "b3"{
             librarian_1.addBook(book: book_3)
+            librarian_1.getBookById(b_id: 3)
         }else if book == "b4"{
             librarian_1.addBook(book: book_4)
+            librarian_1.getBookById(b_id: 4)
         }else if book == "b5"{
             librarian_1.addBook(book: book_5)
-        }else{
-            print("Existing Books Are : ")
-            
+            librarian_1.getBookById(b_id: 5)
         }
     case "c":
         print("C")
@@ -206,7 +212,11 @@ if userInput == 1 {
 }else if userInput == 2{
     print("Hello User !")
 }
+    }
+} while userInput != 3 ; do {
+    print("exit")
 }
+
 //var intVal:Int
 //
 //if let i = readLine(){ //keyboard

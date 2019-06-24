@@ -15,7 +15,7 @@ class Librarian: Employees {
     var teacher_array: [Teachers]
     
     // creating Book dictionary here
-    var bookList=[Int:Books]()
+     var bookList=[Int:Books]()
     
     
     
@@ -68,10 +68,28 @@ class Librarian: Employees {
     }
     
     
-    func addBook(book: Books) {
+     func addBook(book: Books) {
         bookList.updateValue(book, forKey: book.book_id)
     }
-  
+    // fetching the books by its Id
+    func getBookById(b_id:Int) -> Books? {
+        if let bb = bookList[b_id]{
+            print("Book Id : \(bb.book_id)")
+            print("Book Type : \(bb.book_type)\n")
+            return bb as Books
+        }
+        else {
+            return nil
+        }
+        
+    }
+//    func displayBooks() {
+//        for book in bookList {
+//            print("Book Id : \(book.key)")
+//            print("Book Type : \(book.value)\n")
+//            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+//        }
+//    }
     func removeBook() {
         
     }
