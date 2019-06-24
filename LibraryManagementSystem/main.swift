@@ -114,26 +114,10 @@ var librarian_1:Librarian = Librarian(emp_id: 1, emp_f_name: "Rohit", emp_l_name
 
 
 
-//print("-------------------- Fetch Student by Enrollment Number --------------------- \n")
-//if let students = Student.getStudentByEnNumber(stu_id: 727145)
-//    
-//{
-//    print(students.display())
-//}else{
-//    print("This STUDENT do not EXISIT")
-//}
 
 
 
-//
-//print("------------------------ Fetch Teacher by User Id -------------------------- \n")
-//if let teacher = Teachers.getTeacherById(teach_id: 11)
-//
-//{
-//    print(teacher.display())
-//}else{
-//    print("This TEACHER do not EXISIT")
-//}
+
 
 print("--------------------- { Welcome To Library Management System } ---------------------\n")
 print("-----------[ Login as Librarian or User ]----------\n")
@@ -210,7 +194,7 @@ if userInput == 1 {
         print("Welcome To Student's Section \n")
         print("Select Among the Following...")
         print("A For Student's List")
-        print("B To Find Student By Its Id")
+        print("B To Find Student By Enrollment Number")
         print("C To Issue Book")
         print("D To Return Book")
         var option1 = readLine()
@@ -228,7 +212,20 @@ if userInput == 1 {
             student_9.display()
             student_10.display()
         case "b":
-            print("b")
+            var num: Int
+            if let nu = readLine(){
+                num = Int(i)!
+                print("Enter Student Enrollment Number :")
+                print("-------------------- Fetch Student by Enrollment Number --------------------- \n")
+                if let students = Student.getStudentByEnNumber(stu_id: num)
+                
+                {
+                    print(students.display())
+                }else{
+                    print("This STUDENT do not EXISIT")
+                }
+                
+            }
         case "c":
             print("c")
         case "d":
@@ -253,7 +250,20 @@ if userInput == 1 {
             teacher_4.display()
             teacher_5.display()
         case "b":
-            print("b")
+            var num: Int
+            if let nu = readLine(){
+                num = Int(i)!
+                print("Enter Teacher Id :")
+                print("------------------------ Fetch Teacher by User Id -------------------------- \n")
+                if let teacher = Teachers.getTeacherById(teach_id: 11)
+                
+                {
+                    print(teacher.display())
+                }else{
+                    print("This TEACHER do not EXISIT")
+                }
+                
+            }
         case "c":
             print("c")
         case "d":
