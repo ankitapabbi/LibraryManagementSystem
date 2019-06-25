@@ -100,10 +100,7 @@ class Student: Users {
        
     }
     
-    
-    override func calculateFine() {
-        
-    }
+   
     
     
     

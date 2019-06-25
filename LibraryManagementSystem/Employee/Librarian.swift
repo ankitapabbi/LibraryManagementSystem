@@ -94,8 +94,7 @@ class Librarian: Employees {
         for book in bookList {
             print("Book Id : \(book.key)")
             print("Book Type : \(book.value)\n")
-            
-        }
+            }
     }
     func removeBook(bookId : Int) {
        var arrayNewBook:[Books] = [Books]()
@@ -107,7 +106,20 @@ class Librarian: Employees {
             self.book_array = arrayNewBook
         }
     
-   
+     func sortBooksById()
+    {
+        let newBook = book_array.sorted(by:   {b1, b2 in
+            return b1.book_id > b2.book_id
+        })
+
+        for o in newBook
+        {
+            o.display()
+        }
+    
+        
+    }
+    
 
     
 }

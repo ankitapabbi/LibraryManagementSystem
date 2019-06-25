@@ -87,8 +87,5 @@ class Teachers: Users {
     override func returnBook(bookId : Int) {
         
     }
-    override func calculateFine() {
-        
-    }
-   
+    
 }

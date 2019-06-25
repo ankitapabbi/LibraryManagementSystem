@@ -34,8 +34,8 @@ class Employees: Display {
     func display() {
         print("****************** Employee Data ***********************")
         print("Employee Id : \(self.employee_id)")
-        print("Employee First Name : \(self.employee_first_name)")
-        print("Employee Last Name : \(self.employee_last_name)")
+        //print("Employee First Name : \(self.employee_first_name)")
+        //print("Employee Last Name : \(self.employee_last_name)")
         print("Employee Full Name : \(self.fullName)")
         print("Employee Email : \(self.employee_email)")
         print("Employee Contact : \(self.employee_contact)")

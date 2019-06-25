@@ -10,5 +10,5 @@ import Foundation
 protocol UserInformation {
     func issuedBooks(id: Int)
     func returnBook(bookId : Int)
-    func calculateFine() 
+   
 }

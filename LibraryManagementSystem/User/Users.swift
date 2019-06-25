@@ -42,9 +42,15 @@ class Users: Display, UserInformation {
 //        {
 //            throw ErrorCanBe.invalidEmail
 //        }
-        if  ph_num < 10 {
+       
+        if  String(describing: ph_num).count != 10 {
             throw ErrorCanBe.invalidMobile
         }
+         if !email.isVAlidEmail()
+         {
+            throw ErrorCanBe.invalidEmail
+        }
+        
         
         
     
@@ -61,10 +67,10 @@ class Users: Display, UserInformation {
     func display() {
 //        print("--------------------- User's Detail ---------------------\n")
         print("User Id : \(self.user_id)")
-        print("User First Name : \(self.first_name)")
-        print("User Last Name : \(self.last_name)")
+        //print("User First Name : \(self.first_name)")
+        //print("User Last Name : \(self.last_name)")
         print("User Full Name : \(self.fullName)")
-        print("User Email : \(self.email.isVAlidEmail())\n")
+        print("User Email : \(self.email)\n")
         //print("User Address : \(self.address.display())")
         address.display()
         print("User Phone Number : \(self.phone_number)")
@@ -79,6 +85,22 @@ class Users: Display, UserInformation {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
    
     func issuedBooks(id: Int) {
     
@@ -89,9 +111,7 @@ class Users: Display, UserInformation {
     
     }
     
-    func calculateFine() {
     
-    }
   
     
 }
